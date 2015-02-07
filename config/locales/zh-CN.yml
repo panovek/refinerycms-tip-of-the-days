@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      tip_of_the_days:
+        title: Tip Of The Days
+    tip_of_the_days:
+      admin:
+        tip_of_the_days:
+          actions:
+            create_new: 建立新的 Tip Of The Day
+            reorder: 对 Tip Of The Days 重新排序
+            reorder_done: 对 Tip Of The Days 的重新排序结束
+          records:
+            title: Tip Of The Days
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Tip Of The Days yet. Click "Add New Tip Of The Day" to add your first tip of the day.
+            no_items_yet: 目前没有 Tip Of The Days . 点击 "Add New Tip Of The Day" 创建一个tip of the day.
+          tip_of_the_day:
+            view_live_html: 查看 tip of the day 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 tip of the day
+            delete: 永久删除 tip of the day
+      tip_of_the_days:
+        show:
+          other: 其他 Tip Of The Days
+  activerecord:
+    attributes:
+      'refinery/tip_of_the_days/tip_of_the_day':
+        title: Title
+        content: Content

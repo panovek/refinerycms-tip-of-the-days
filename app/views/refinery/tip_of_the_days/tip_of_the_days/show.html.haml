@@ -1,0 +1,19 @@
+- content_for :body_content_title do
+  = @tip_of_the_day.title
+- content_for :body do
+  %section
+    %h1 Title
+    %p
+      = raw @tip_of_the_day.title
+  %section
+    %h1 Content
+    %p
+      = raw @tip_of_the_day.content
+- content_for :side_body do
+  %aside
+    %h2= t('.other')
+    %ul#tip_of_the_days
+      - @tip_of_the_days.each do |tip_of_the_day|
+        %li
+          = link_to tip_of_the_day.title, refinery.tip_of_the_days_tip_of_the_day_path(tip_of_the_day)
+= render '/refinery/content_page'

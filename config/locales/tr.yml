@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      tip_of_the_days:
+        title: Tip Of The Days
+    tip_of_the_days:
+      admin:
+        tip_of_the_days:
+          actions:
+            create_new: Yeni Ekle Tip Of The Day
+            reorder: Tekrar sirala Tip Of The Days
+            reorder_done: Tekrar siralama tamamlandiTip Of The Days
+          records:
+            title: Tip Of The Days
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Tip Of The Days yok henuz.  Tikla "Yeni Ekle Tip Of The Day" eklemek senin ilk tip of the day.
+          tip_of_the_day:
+            view_live_html: Bunu canlu tip of the day goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle tip of the day
+            delete: Bunu Sil tip of the day sonsuza dek
+      tip_of_the_days:
+        show:
+          other: Diger Tip Of The Days
+  activerecord:
+    attributes:
+      'refinery/tip_of_the_days/tip_of_the_day':
+        title: Title
+        content: Content

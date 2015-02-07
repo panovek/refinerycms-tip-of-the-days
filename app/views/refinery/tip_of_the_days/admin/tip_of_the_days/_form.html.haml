@@ -1,0 +1,21 @@
+= form_for [refinery, :tip_of_the_days_admin, @tip_of_the_day] do |f|
+  = render '/refinery/admin/error_messages', |
+    :object => @tip_of_the_day,              |
+    :include_object_name => true             |
+  .field
+    = f.label :title
+    = f.text_field :title, :class => 'larger widest'
+  .field
+    = render '/refinery/admin/wysiwyg',           |
+      :f => f,                                    |
+      :fields => [:content],                      |
+      :object => "tip_of_the_days/tip_of_the_day"
+  = render '/refinery/admin/form_actions', :f => f,                                                          |
+    :continue_editing => false,                                                                              |
+    :delete_title => t('delete', :scope => 'refinery.tip_of_the_days.admin.tip_of_the_days.tip_of_the_day'), |
+    :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @tip_of_the_day.title) |
+- content_for :javascripts do
+  :javascript
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });

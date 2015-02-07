@@ -1,0 +1,19 @@
+%ul
+  - if ::Refinery::TipOfTheDays::Admin::TipOfTheDaysController.searchable?
+    %li
+      = render '/refinery/admin/search', :url => refinery.tip_of_the_days_admin_tip_of_the_days_path
+  %li
+    = link_to t('.create_new'), refinery.new_tip_of_the_days_admin_tip_of_the_day_path, |
+      :class => "add_icon"                                                              |
+  - if !searching? && ::Refinery::TipOfTheDays::Admin::TipOfTheDaysController.sortable? && ::Refinery::TipOfTheDays::TipOfTheDay.many?
+    %li
+      = link_to t('.reorder', :what => "Tip Of The Days"),   |
+        refinery.tip_of_the_days_admin_tip_of_the_days_path, |
+        :id => "reorder_action",                             |
+        :class => "reorder_icon"                             |
+      -#
+      = link_to t('.reorder_done', :what => "Tip Of The Days"), |
+        refinery.tip_of_the_days_admin_tip_of_the_days_path,    |
+        :id => "reorder_action_done",                           |
+        :style => "display: none;",                             |
+        :class => "reorder_icon"                                |

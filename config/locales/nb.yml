@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      tip_of_the_days:
+        title: Tip Of The Days
+    tip_of_the_days:
+      admin:
+        tip_of_the_days:
+          actions:
+            create_new: Lag en ny Tip Of The Day
+            reorder: Endre rekkefølgen på Tip Of The Days
+            reorder_done: Ferdig å endre rekkefølgen Tip Of The Days
+          records:
+            title: Tip Of The Days
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Tip Of The Days enda. Klikk på "Lag en ny Tip Of The Day" for å legge til din første tip of the day.
+          tip_of_the_day:
+            view_live_html: Vis hvordan denne tip of the day ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne tip of the day
+            delete: Fjern denne tip of the day permanent
+      tip_of_the_days:
+        show:
+          other: Andre Tip Of The Days
+  activerecord:
+    attributes:
+      'refinery/tip_of_the_days/tip_of_the_day':
+        title: Title
+        content: Content

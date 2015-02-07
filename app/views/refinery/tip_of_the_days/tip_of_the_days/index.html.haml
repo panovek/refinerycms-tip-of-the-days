@@ -1,0 +1,6 @@
+- content_for :body do
+  %ul#tip_of_the_days
+    - @tip_of_the_days.each do |tip_of_the_day|
+      %li
+        = link_to tip_of_the_day.title, refinery.tip_of_the_days_tip_of_the_day_path(tip_of_the_day)
+= render '/refinery/content_page'

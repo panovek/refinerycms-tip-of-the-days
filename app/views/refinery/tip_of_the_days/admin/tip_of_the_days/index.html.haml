@@ -1,0 +1,5 @@
+%section#records
+  = render 'records'
+%aside#actions
+  = render 'actions'
+= render '/refinery/admin/make_sortable', options: {tree: false} if !searching? and ::Refinery::TipOfTheDays::Admin::TipOfTheDaysController.sortable? and ::Refinery::TipOfTheDays::TipOfTheDay.many?

@@ -1,0 +1,11 @@
+= render 'refinery/admin/search_header', :url => refinery.tip_of_the_days_admin_tip_of_the_days_path
+.pagination_container
+  - if @tip_of_the_days.any?
+    = render 'tip_of_the_days'
+  - else
+    %p
+      - if searching?
+        = t('no_results', :scope => 'refinery.admin.search')
+      - else
+        %strong
+          = t('.no_items_yet')

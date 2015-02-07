@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      tip_of_the_days:
+        title: Tip Of The Days
+    tip_of_the_days:
+      admin:
+        tip_of_the_days:
+          actions:
+            create_new: Nieuwe Tip Of The Day toevoegen
+            reorder: De volgorde van de Tip Of The Days wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Tip Of The Day-volgorde
+          records:
+            title: Tip Of The Days
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Tip Of The Days. Druk op 'Nieuwe Tip Of The Day toevoegen' om de eerste toe te voegen.
+          tip_of_the_day:
+            view_live_html: Deze tip of the day op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze tip of the day
+            delete: Deze tip of the day definitief verwijderen
+      tip_of_the_days:
+        show:
+          other: Andere Tip Of The Days
+  activerecord:
+    attributes:
+      'refinery/tip_of_the_days/tip_of_the_day':
+        title: Title
+        content: Content

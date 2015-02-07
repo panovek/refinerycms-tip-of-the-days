@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      tip_of_the_days:
+        title: Tip Of The Days
+#        article: masculino/femenino
+    tip_of_the_days:
+      admin:
+        tip_of_the_days:
+          actions:
+            create_new: Crear nuevo tip of the day
+            reorder: Reordenar tip of the days
+            reorder_done: Reordenación de tip of the days completada
+          records:
+            title: Tip Of The Days
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay tip of the days todavía. Pulsa en "Crear nuevo Tip Of The Day" para crear tu primer tip of the day.
+          tip_of_the_day:
+            view_live_html: Ver este tip of the day como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este tip of the day
+            delete: Borrar este tip of the day para siempre
+      tip_of_the_days:
+        show:
+          other: Otros tip of the days
+  activerecord:
+    attributes:
+      'refinery/tip_of_the_days/tip_of_the_day':
+        title: Title
+        content: Content

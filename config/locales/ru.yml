@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      tip_of_the_days:
+        title: Советы дня
+    tip_of_the_days:
+      admin:
+        tip_of_the_days:
+          actions:
+            create_new: Добавить новый совет дня
+            reorder: Reorder Tip Of The Days
+            reorder_done: Done Reordering Tip Of The Days
+          records:
+            title: Tip Of The Days
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Tip Of The Days yet. Click "Add New Tip Of The Day" to add your first tip of the day.
+          tip_of_the_day:
+            view_live_html: Просмотреть совет дня <br/><em>(будет открыта в новом окне)</em>
+            edit: Редактировать этот совет дня
+            delete: Удалить совет дня
+      tip_of_the_days:
+        show:
+          other: Other Tip Of The Days
+  activerecord:
+    attributes:
+      'refinery/tip_of_the_days/tip_of_the_day':
+        title: Title
+        content: Content
