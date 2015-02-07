@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
-  s.name              = 'refinerycms-tip_of_the_days'
+  s.name              = 'refinerycms-tip-of-the-days'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Tip Of The Days extension for Refinery CMS'
   s.date              = '2015-01-16'
