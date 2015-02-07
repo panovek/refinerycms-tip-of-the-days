@@ -12,7 +12,7 @@ class CreateTipOfTheDaysTipOfTheDays < ActiveRecord::Migration
 
   def down
     if defined?(::Refinery::UserPlugin)
-      ::Refinery::UserPlugin.destroy_all({:name => "refinerycms-tip_of_the_days"})
+      ::Refinery::UserPlugin.destroy_all({:name => "refinerycms-tip-of-the-days"})
     end
 
     if defined?(::Refinery::Page)
